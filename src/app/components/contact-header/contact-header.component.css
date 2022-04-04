@@ -1,0 +1,17 @@
+.contact-header{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-header-icons fa-icon{
+    font-size: 20px;
+    margin-left: 15px;
+    color: #4f4f4f;
+}
+.contact-header p{
+    color: #4f4f4f;
+    font-size: 18px;
+}
