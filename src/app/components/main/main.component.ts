@@ -14,7 +14,14 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.newsService.getArticles().subscribe((articles) => {
-      this.articles = articles.data            
+      this.articles = articles.data              
+    })
+  }
+
+
+  getArticles(){
+    this.newsService.getArticles().subscribe((articles) => {
+      this.articles = articles.data  
     })
   }
 
