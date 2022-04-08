@@ -1,0 +1,31 @@
+.pagination-container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.pagination-controls{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ctrl-left, .ctrl-right{
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: ease 0.3s;
+}
+.ctrl-left:hover, .ctrl-right:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.ctrl-count{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}

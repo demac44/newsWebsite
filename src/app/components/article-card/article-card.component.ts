@@ -13,12 +13,13 @@ export class ArticleCardComponent implements OnInit {
     description: '',
     url: '',
     source: '',
-    image: '',
+    urlToImage: '',
     category: '',
     language: '',
     country: '',
-    published_at: '',
-    data: ''
+    publishedAt: '',
+    articles: '',
+    content: ''
   }
 
   // @Input() articles: Article[] = []

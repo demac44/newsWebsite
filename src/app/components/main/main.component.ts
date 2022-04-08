@@ -9,20 +9,23 @@ import { NewsService } from 'src/app/services/news.service';
 })
 export class MainComponent implements OnInit {
   articles: Article[] = []
+  limit: number = 25
 
   constructor(private newsService: NewsService) { }
 
   ngOnInit(): void {
     this.newsService.getArticles().subscribe((articles) => {
-      this.articles = articles.data              
+      this.articles = articles.articles              
     })
+    this.limit = this.newsService.currentLimit
   }
 
 
   getArticles(){
     this.newsService.getArticles().subscribe((articles) => {
-      this.articles = articles.data  
+      this.articles = articles.articles  
     })
+    this.limit = this.newsService.currentLimit
   }
 
 }

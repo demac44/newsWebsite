@@ -4,10 +4,11 @@ export interface Article {
     description: string;
     url: string;
     source: string;
-    image: string;
+    urlToImage: string;
     category: string;
     language: string;
     country: string;
-    published_at: string;
-    data: any;
+    publishedAt: string;
+    articles: any;
+    content: string;
 }
