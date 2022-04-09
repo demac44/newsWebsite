@@ -1,23 +1,34 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { NewsService } from 'src/app/services/news.service';
 import { MainComponent } from '../main/main.component';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavbarComponent implements OnInit {
+  faSearch = faSearch
+  val: string = ""
   language: string = "en";
   category: string = "general"
 
-  constructor(private news: NewsService, private main: MainComponent) {
-    this.news.currentAPI.subscribe(lang => lang = this.language)
+  searchForm = this.formBuilder.group({
+    searchInput: ""
+  })
+
+  constructor(
+    private news: NewsService, 
+    private main: MainComponent,
+    private formBuilder: FormBuilder
+    ) {
+    this.news.currentAPI.subscribe(data => data = this.language)
   }
 
   ngOnInit(): void {
-    this.news.currentAPI.subscribe(lang => lang = this.language)
+    this.news.currentAPI.subscribe(data => data = this.language)
   }
 
 
@@ -33,4 +44,9 @@ export class NavbarComponent implements OnInit {
     this.main.getArticles()
   }
 
+  search(): void{
+    let val = this.searchForm.get('searchInput')?.value
+    this.news.setSearchQuery(val)
+    this.main.getArticles()
+  }
 }

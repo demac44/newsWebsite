@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .navbar h1{
     color: white;
@@ -26,4 +27,28 @@
     border: 2px solid #2f2f2f;
     border-radius: 5px;
     cursor: pointer;
+}
+.search-form{
+    display: flex;
+}
+.search-bar{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-left: 30px;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}
+.search-icon{
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }

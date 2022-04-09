@@ -13,6 +13,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ArticleCardComponent } from './components/article-card/article-card.component';
 import { ArticlesContainerComponent } from './components/articles-container/articles-container.component';
 import { PaginationControlComponent } from './components/pagination-control/pagination-control.component';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes, {enableTracing: true})
   ],
   providers: [],

@@ -17,6 +17,15 @@
             <option value="technology">Technology</option>
 
         </select>
+
+        <form action="" class="search-form" [formGroup]="searchForm" (ngSubmit)="search()">
+            <input #searchInput type="text" name="searchInput" class="search-bar" formControlName="searchInput" placeholder="Search...">
+            <button class="search-icon" type="submit">
+                <fa-icon [icon]="faSearch"></fa-icon>
+            </button>
+        </form>
+
+
     </div>
     <span>
         <select #selectListLang (change)="getLanguage(selectListLang.value)" class="lang" name="" id="">
