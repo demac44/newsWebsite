@@ -9,23 +9,12 @@
 .pagination-controls{
     width: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-.ctrl-left, .ctrl-right{
+.load-more-btn{
+    border: 1px solid white;
+    padding: 10px;
     color: white;
-    font-size: 45px;
-    font-weight: bolder;
     cursor: pointer;
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: ease 0.3s;
-}
-.ctrl-left:hover, .ctrl-right:hover{
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.ctrl-count{
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
 }

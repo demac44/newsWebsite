@@ -36,7 +36,7 @@ export class NewsService {
 
   setLimit(limit: number){
     this.apiStr.next(limit)
-    this.currentLimit = 25     
+    this.currentLimit += 25
     this.apiUrl = `https://newsapi.org/v2/top-headlines?language=${this.currentLanguage}&category=${this.currentCategory}&pageSize=${this.currentLimit}&apiKey=7bd64748222643f996e7accadab32872`
   }
 

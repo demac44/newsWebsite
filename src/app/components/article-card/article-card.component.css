@@ -1,6 +1,6 @@
 .article-card{
     background-color: rgb(230, 230, 230);
-    height: 300px;
+    height: 320px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -26,5 +26,8 @@
     font-size: 18px;
     padding: 10px 5px;
     font-weight: bold;
+    color: black;
+}
+.article-source{
     color: black;
 }

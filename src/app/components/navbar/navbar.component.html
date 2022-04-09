@@ -1,11 +1,11 @@
 <div class="navbar">
     <div class="nav-main">
-        <span class="logo">
+        <a href="/" class="logo">
             <h1>NEW</h1>
             <h1>NEWS</h1>
-        </span>
+        </a>
 
-        <a routerLink="">HOME</a>
+        <a class="home-btn" href="/">HOME</a>
 
         <select #selectListCategory (change)="changeCategory(selectListCategory.value)" class="categories" name="" id="">
             <option value="general">General</option>

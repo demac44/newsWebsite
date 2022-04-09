@@ -12,7 +12,9 @@ export class ArticleCardComponent implements OnInit {
     title: '',
     description: '',
     url: '',
-    source: '',
+    source: {
+      name: ""
+    },
     urlToImage: '',
     category: '',
     language: '',

@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
 }
-.navbar a{
+.home-btn{
     color: white;
     font-size: 18px;
     margin-left: 50px;

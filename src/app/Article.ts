@@ -3,7 +3,9 @@ export interface Article {
     title: string;
     description: string;
     url: string;
-    source: string;
+    source: {
+        name: string;
+    };
     urlToImage: string;
     category: string;
     language: string;

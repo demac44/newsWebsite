@@ -18,16 +18,9 @@ export class PaginationControlComponent implements OnInit {
     this.service.currentAPI.subscribe(limit => limit = this.limit)
   }
 
-  nextPage(){
+  loadMore(){
+    this.limit+=25
     this.service.setLimit(this.limit+25)
-    this.main.getArticles()
-  }
-
-  prevPage(){
-    if(this.limit<=25){
-      return
-    }
-    this.service.setLimit(this.limit-25)
     this.main.getArticles()
   }
 
