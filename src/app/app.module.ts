@@ -14,6 +14,7 @@ import { ArticleCardComponent } from './components/article-card/article-card.com
 import { ArticlesContainerComponent } from './components/articles-container/articles-container.component';
 import { PaginationControlComponent } from './components/pagination-control/pagination-control.component';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     ArticleCardComponent,
     ArticlesContainerComponent,
-    PaginationControlComponent
+    PaginationControlComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

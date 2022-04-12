@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 250px;
+    border-radius: 5px;
 }
 .article-card-img{
     height: 100%;
@@ -30,4 +31,7 @@
 }
 .article-source{
     color: black;
+}
+.article-card:hover{
+    background-color: rgb(179, 179, 179);
 }
