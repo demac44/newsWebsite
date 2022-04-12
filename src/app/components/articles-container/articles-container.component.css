@@ -1,6 +1,28 @@
 .articles-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 1200px){
+    .articles-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 991px){
+    .articles-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .articles-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 447px){
+    .articles-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

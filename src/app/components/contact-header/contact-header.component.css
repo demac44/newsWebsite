@@ -16,3 +16,13 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+@media screen and (max-width: 560px){
+    .contact-header{
+        flex-direction: column;
+    }
+    .contact-header-icons{
+        margin-top: 10px;
+    }
+
+}

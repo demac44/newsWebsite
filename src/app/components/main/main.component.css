@@ -3,3 +3,8 @@
     padding: 20px 50px;
     background: linear-gradient(to right, rgb(6, 6, 26), rgb(29, 29, 79));
 }
+@media screen and (max-width: 768px){
+    .main-container{
+        padding: 20px;
+    }
+}

@@ -19,15 +19,20 @@
         </select>
 
         <form action="" class="search-form" [formGroup]="searchForm" (ngSubmit)="search()">
-            <input #searchInput type="text" name="searchInput" class="search-bar" formControlName="searchInput" placeholder="Search...">
             <button class="search-icon" type="submit">
                 <fa-icon [icon]="faSearch"></fa-icon>
             </button>
+            <input #searchInput type="text" name="searchInput" class="search-bar" formControlName="searchInput" placeholder="Search...">
         </form>
 
 
     </div>
-    <span>
+    <span class="responsive-logo">
+        <a href="/" class="logo">
+            <h1>NEW</h1>
+            <h1>NEWS</h1>
+        </a>
+
         <select #selectListLang (change)="getLanguage(selectListLang.value)" class="lang" name="" id="">
             <option value="en">English</option>
             <option value="ar">Arabic</option>
