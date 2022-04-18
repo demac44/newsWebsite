@@ -4,6 +4,6 @@ Website made with NewsAPI and Angular
 
 ## Snapshots
 
-![alt text] [img]
+![alt text][img1]
 
-[img]: https://github.com/demac44/newsWebsite/blob/master/src/assets/images/snapshots/newsapi.png
+[img1]: https://github.com/demac44/newsWebsite/blob/master/src/assets/images/snapshots/newsapi.png
